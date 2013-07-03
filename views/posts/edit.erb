@@ -1,0 +1,6 @@
+<form action="/posts/<%=@post.id%>" method="POST">
+	<input type="hidden" name="_method" value="put"> 
+	<label>Title</label><input name="post[title]" value="<%=@post.title%>"><br>
+	<label>Body</label><textarea name="post[body]" rows="5"><%=@post.body%></textarea><br>
+	<input type="submit" value="Update Post">
+</form>
